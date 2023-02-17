@@ -1,9 +1,12 @@
 #include <stdio.h>
+
 /**
  * main - print the size of various types on the computer, compile and run
  *
  * Return: Always 0 (Success)
+ *
  */
+
 int main(void)
 {
 	printf("The size of char is %d bytes\n", sizeof(char));
