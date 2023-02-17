@@ -1,20 +1,29 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
- * main - Print lower case, except for q and e.
+ * main - Entry point
  *
- * Return: Always 0.
+ * This is a simple C code,
+ * it prints out all the alphabets,
+ * except for the lerrers e and q,
+ * using the putchar function.
+ *
+ * Return: 0
  */
+
 int main(void)
 {
-	char letter;
+	int i;
+	char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (i = 0; alphabets[i]; i++)
 	{
-		if (letter != 'e' && letter != 'q')
-			putchar(letter);
+		if ((alphabets[i] == 'e') | (alphabets[i] == 'q'))
+			continue;
+		putchar(alphabets[i]);
 	}
-
 	putchar('\n');
 
 	return (0);
+}
