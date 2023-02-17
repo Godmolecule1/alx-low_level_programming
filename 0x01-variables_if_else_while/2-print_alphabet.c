@@ -1,34 +1,27 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
-* main - Prints all possible combinations of two two-digit numbers,
-* ranging from 0-99, separated by a comma followed by a space.
-*
-* Return: Always 0.
-*/
+ * main - Entry point
+ *
+ * This is a simple C code,
+ * it prints all alphabets in lowercase,
+ * using the putchar function.
+ *
+ * Return: 0
+ */
+
 int main(void)
 {
-int i, j;
+	char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
+	int len = strlen(alphabets);
+	int i;
 
-for (i = 0; i < 100; i++)
-{
-for (j = 0; j < 100; j++)
-{
-if (i < j)
-{
-putchar((i / 10) + 48);
-putchar((i % 10) + 48);
-putchar(' ');
-putchar((j / 10) + 48);
-putchar((j % 10) + 48);
-if (i != 98 || j != 99)
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-}
-putchar('\n');
-return (0);
+	for (i = 0; i < len; i++)
+	{
+	putchar(alphabets[i]);	
+	}
+	putchar('\n');
+
+	return (0);
 }
