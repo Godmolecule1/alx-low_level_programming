@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
+ * print_alphabet - check the code
  *
  * code by God_molecule
  *
@@ -11,6 +11,7 @@
 void print_alphabet(void)
 {
 	char letter = 'a';
+
 	while (letter <= 'z')
 	{
 		putchar(letter);
