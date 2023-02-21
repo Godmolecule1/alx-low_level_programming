@@ -3,6 +3,8 @@
 /**
  * main - check the code
  *
+ * code by God_molecule
+ *
  * Return: Always 0.
  *
  */
